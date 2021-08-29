@@ -1,0 +1,508 @@
+@import url("https://fonts.googleapis.com/css2? family = Nunito + Sans: wght @ 300 & display = swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playball&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chewy&family=Fredericka+the+Great&family=Indie+Flower&family=Playball&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.titulo {
+  color: #212429;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.logoAux {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logoAux i {
+  color: #FF958C;
+}
+
+.logoAux span {
+  margin-left: 5px;
+  color: #FF958C;
+}
+
+.logoAux h1 {
+  font-size: 35px;
+  letter-spacing: 1.5px;
+  font-family: 'Nunito Sans';
+}
+
+/*Header*/
+.hero {
+  background-image: url(img/contactHeader1.jpg);
+  height: 75vh;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Animate Background Image */
+}
+
+.hero p {
+  text-transform: uppercase;
+  background-color: rgba(33, 36, 41, 0.5);
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  -webkit-box-shadow: 0px 2px 2px 0 white;
+          box-shadow: 0px 2px 2px 0 white;
+}
+
+.hero p span {
+  font-family: 'Fredericka the Great', cursive;
+  font-style: italic;
+  font-size: 65px;
+  letter-spacing: 15px;
+  padding: 25px;
+  /* Clip Background Image */
+  background: url(img/animacionTitulo.png) repeat-y;
+  -webkit-background-clip: text;
+  /* Animate Background Image */
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 20s linear infinite;
+  /* Activate hardware acceleration for smoother animations */
+}
+
+@-webkit-keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.hero .hero__wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/*Contacto*/
+.contact {
+  background-image: url(img/contacto.svg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 120vh;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .contact__form {
+  -webkit-box-shadow: 0 0px 7px 2px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0px 7px 2px rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 750px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.contact .test {
+  position: relative;
+  z-index: 5;
+}
+
+.contact .test h3 {
+  color: #212429;
+  padding-top: 35px;
+  padding-left: 35px;
+  font-size: 25px;
+}
+
+.contact .test p {
+  margin: 45px;
+}
+
+.contact .test input {
+  color: #212429;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #FF958C;
+  background: none;
+}
+
+.contact .test input:focus {
+  outline: none;
+}
+
+.contact .test textarea {
+  background-color: none;
+  color: #212429;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #FF958C;
+  background: none;
+}
+
+.contact .test textarea:focus {
+  outline: none;
+}
+
+.contact .test label {
+  color: grey;
+  left: 5px;
+  top: 10px;
+  -webkit-transition: 0.5s ease-in-out all;
+  transition: 0.5s ease-in-out all;
+  pointer-events: none;
+}
+
+.contact .test label:focus {
+  top: -14;
+}
+
+.contact .test form button {
+  background-color: #212429;
+  border: none;
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  color: #FF958C;
+  height: 40px;
+  -webkit-transition: .35s;
+  transition: .35s;
+}
+
+.contact .test form button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  font-size: 20px;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/*Redes*/
+.redes-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 80px;
+  background-color: #212429;
+  margin-bottom: 5px;
+}
+
+.redes-container ul li {
+  display: inline-block;
+  margin: 0 25px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.redes-container ul li a {
+  display: block;
+  border-radius: 20px;
+  padding: 0 10px;
+  color: #FF958C;
+  line-height: 50px;
+  font-size: 20px;
+  -webkit-box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.2);
+  -webkit-transition: .65s;
+  transition: .65s;
+}
+
+.redes-container ul:hover a {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+.redes-container ul li a:hover {
+  -webkit-transform: translateX(5px) scale(1.05);
+          transform: translateX(5px) scale(1.05);
+  -webkit-box-shadow: 0 5px 5px 2px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 5px 2px rgba(0, 0, 0, 0.4);
+  -webkit-filter: none;
+          filter: none;
+}
+
+.redes-container ul li .Facebook:hover {
+  background: #3b5999;
+  color: white;
+}
+
+.redes-container ul li .Instagram:hover {
+  background: #e4405f;
+  color: white;
+}
+
+.redes-container ul li .Twitter:hover {
+  background: #55acee;
+  color: white;
+}
+
+/*Footer*/
+footer {
+  background-color: #212429;
+  padding: 60px 0 30px 0;
+  margin: auto;
+  overflow: hidden;
+}
+
+footer .contenedor-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+footer .content-foo {
+  text-align: center;
+  color: white;
+}
+
+footer .content-foo h4 {
+  color: #FF958C;
+  border-bottom: 3px solid #FF958C;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+footer .content-foo h2 {
+  color: white;
+  font-size: 17px;
+}
+
+footer .content-foo h2 i {
+  color: #FF958C;
+}
+
+footer .content-foo h2:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+footer .titulo-final {
+  text-align: center;
+  font-size: 15px;
+  margin: 20px 0 0 0;
+  color: white;
+}
+
+footer .line {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .line hr {
+  width: 800px;
+}
+
+footer .firma {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .firma span {
+  color: #FF958C;
+}
+
+footer .firma i {
+  color: #FF958C;
+}
+
+footer .firma .creador {
+  color: white;
+}
+
+footer .firma:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 60vh;
+  }
+  .hero p {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 90px;
+  }
+  .hero p span {
+    font-size: 35px;
+    letter-spacing: 3px;
+    padding: 10px;
+  }
+  .contact .contact__form {
+    width: 450px;
+  }
+  /*Nosotros Responsive*/
+  .sobreNosotros .sobreNosotros__Conteiner {
+    width: 95%;
+    margin: auto;
+  }
+  .sobreNosotros .sobreNosotros__Conteiner .sobreNosotros__Conteiner__img {
+    width: 400px;
+  }
+  .sobreNosotros .sobreNosotros__Conteiner .sobreNosotros__Conteiner__text {
+    width: 400px;
+    margin-top: 25px;
+  }
+  /*Footer Responsive*/
+  .contenedor-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content-foo {
+    padding: 15px;
+  }
+  .content-foo h4 {
+    width: 30%;
+    font-size: 20px;
+    margin: auto;
+  }
+  .content-foo h2 {
+    padding: 10px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .hero {
+    height: 40vh;
+  }
+  .hero p {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 90px;
+  }
+  .hero p span {
+    font-size: 30px;
+    letter-spacing: 3px;
+    padding: 10px;
+  }
+  .contact .contact__form {
+    width: 360px;
+  }
+  /*Nosotros Responsive*/
+  .sobreNosotros .sobreNosotros__Conteiner {
+    width: 95%;
+    margin: auto;
+  }
+  .sobreNosotros .sobreNosotros__Conteiner .sobreNosotros__Conteiner__img {
+    width: 370px;
+  }
+  .sobreNosotros .sobreNosotros__Conteiner .sobreNosotros__Conteiner__text {
+    width: 350px;
+    margin-top: 25px;
+  }
+  /*Footer Responsive*/
+  .contenedor-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content-foo {
+    padding: 15px;
+  }
+  .content-foo h4 {
+    width: 30%;
+    font-size: 20px;
+    margin: auto;
+  }
+  .content-foo h2 {
+    padding: 10px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 357px) {
+  .hero p span {
+    font-size: 25px;
+  }
+  .contact .contact__form {
+    width: 315px;
+  }
+  .redes-container {
+    height: 250px;
+  }
+  .redes-container ul li {
+    display: block;
+    margin: 15px 15px;
+  }
+  .contenedor-footer .content-foo h4 {
+    width: 60%;
+  }
+}
+/*# sourceMappingURL=contacto.css.map */

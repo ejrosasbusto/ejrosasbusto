@@ -1,0 +1,716 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playball&display=swap");
+@import url("https://fonts.googleapis.com/css2? family = Nunito + Sans: wght @ 300 & display = swap");
+@import url("https://fonts.googleapis.com/css2?family=Chewy&family=Fredericka+the+Great&family=Indie+Flower&family=Playball&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.logoAux {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logoAux i {
+  color: #FF958C;
+}
+
+.logoAux span {
+  margin-left: 5px;
+  color: #FF958C;
+}
+
+.logoAux h1 {
+  font-size: 35px;
+  letter-spacing: 1.5px;
+  font-family: 'Nunito Sans';
+}
+
+/*Header*/
+.hero {
+  height: 90vh;
+  background-image: url(img/principal.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .sobreContainer {
+  background-color: rgba(33, 36, 41, 0.5);
+  width: 800px;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 150px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.hero .sobreContainer .container .hero__container {
+  color: white;
+  font-weight: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero .sobreContainer .container .hero__text .hero__title {
+  text-align: center;
+  font-family: 'Nunito Sans';
+  font-size: 70px;
+  letter-spacing: 3px;
+}
+
+.hero .sobreContainer .container .hero__text .hero__title span {
+  color: #FF958C;
+}
+
+.hero .sobreContainer .container .hero__text .hero__subtitle {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  font-style: italic;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: 'Nunito Sans';
+}
+
+.hero .sobreContainer .container .hero__text a {
+  text-decoration: none;
+  color: #212429;
+  background-color: rgba(255, 149, 140, 0.9);
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: bold;
+  margin-left: 500px;
+  margin-top: 30px;
+  display: block;
+  width: 200px;
+  text-align: center;
+  font-size: 17px;
+  -webkit-transition: .55s;
+  transition: .55s;
+}
+
+.hero .sobreContainer .container .hero__text a:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  color: #FF958C;
+  background-color: #212429;
+  -webkit-box-shadow: 0px 2px 5px 0 white;
+          box-shadow: 0px 2px 5px 0 white;
+}
+
+.hero .hero__wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+}
+
+/*Abous Us*/
+.porqueLearning .porqueLearning__titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.porqueLearning .tituloPorque {
+  color: #212429;
+  font-size: 55px;
+  -webkit-text-stroke: 1px #212429;
+  background-color: #FF958C;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+  text-align: center;
+  width: 90%;
+  margin-bottom: 30px;
+  font-family: 'Nunito Sans';
+  -webkit-box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.8);
+          box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.8);
+  padding: 25px 0px 25px 0px;
+}
+
+.porqueLearning .tituloPorque span {
+  position: relative;
+  right: 0;
+  width: 0;
+  -webkit-text-stroke: 1px #212429;
+}
+
+.porqueLearning .tituloPorque span::after {
+  content: "";
+  background: #FF958C;
+  right: 0;
+  height: 110%;
+  position: absolute;
+  -webkit-animation: maquina 3s infinite backwards steps(17);
+          animation: maquina 3s infinite backwards steps(17);
+}
+
+@-webkit-keyframes maquina {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+@keyframes maquina {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+.porqueLearning .learningContenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+  background-color: #FBFCFF;
+  width: 90%;
+  margin: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.porqueLearning .learningContenedor .learningContenedor__img {
+  text-align: center;
+  background-color: white;
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 600px;
+  -webkit-transition: .55s;
+  transition: .55s;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.porqueLearning .learningContenedor .learningContenedor__texto {
+  width: 50%;
+}
+
+.porqueLearning .learningContenedor .learningContenedor__texto h3 {
+  margin-bottom: 15px;
+}
+
+.porqueLearning .learningContenedor .learningContenedor__texto h3 span {
+  background: #212429;
+  color: #FF958C;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  padding: 2px;
+  margin-right: 15px;
+}
+
+.porqueLearning .learningContenedor .learningContenedor__texto p {
+  text-align: justify;
+}
+
+/*Cursos*/
+.contenedor-cursos {
+  background-color: #212429;
+  margin: 25px 0px 0px 0px;
+}
+
+.contenedor-cursos .tituloCursos {
+  color: #FF958C;
+  font-size: 65px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Nunito Sans';
+  padding: 25px 0px 25px 0px;
+}
+
+.contenedor-cursos .tituloCursos span {
+  position: relative;
+  right: 0;
+  width: 0;
+}
+
+.contenedor-cursos .tituloCursos span::after {
+  content: "";
+  background: #212429;
+  right: 0;
+  height: 110%;
+  position: absolute;
+  -webkit-animation: maquina 4s infinite backwards steps(20);
+          animation: maquina 4s infinite backwards steps(20);
+}
+
+@keyframes maquina {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+.contenedor-cursos .cursoSalud {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.contenedor-cursos .cursoSalud .cursoSalud__cursos {
+  text-align: center;
+  background-color: white;
+  margin: 0px 25px 25px 25px;
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 15px;
+  -webkit-transition: .75s;
+  transition: .75s;
+}
+
+.contenedor-cursos .cursoSalud .cursoSalud__cursos img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+  height: 230px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contenedor-cursos .cursoSalud .cursoSalud__cursos .cursoSalud__calificacion {
+  margin: 10px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.contenedor-cursos .cursoSalud .cursoSalud__cursos .cursoSalud__calificacion span {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.contenedor-cursos .cursoSalud .cursoSalud__cursos .cursoSalud__calificacion p {
+  font-size: 13px;
+}
+
+.contenedor-cursos .cursoSalud .cursoSalud__cursos .cursoSalud__calificacion i {
+  color: #EAD637;
+}
+
+.contenedor-cursos .cursoSalud .cursoSalud__cursos .cursoSalud__descripcion {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+
+.contenedor-cursos .cursoSalud .cursoSalud__cursos .cursoSalud__descripcion .bold {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.contenedor-cursos .cursoSalud .cursoSalud__cursos .cursoSalud__modalidad {
+  font-size: 16px;
+}
+
+.contenedor-cursos .cursoSalud .cursoSalud__cursos .cursoSalud__modalidad p {
+  border-top: 1px solid #FF958C;
+}
+
+.contenedor-cursos .cursoSalud .cursoSalud__cursos .cursoSalud__verMas {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.contenedor-cursos .cursoSalud .cursoSalud__cursos .cursoSalud__verMas a {
+  text-align: center;
+  background-color: #212429;
+  padding: 7px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+.contenedor-cursos .cursoSalud .cursoSalud__cursos:hover {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.8);
+          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.8);
+  border-top-left-radius: 30px;
+  -webkit-animation: 5s line;
+          animation: 5s line;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.contenedor-cursos .cursoSalud .cursoSalud__cursos:hover a:hover {
+  color: #FF958C;
+}
+
+/*Redes*/
+.redes-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5px;
+  height: 80px;
+  background-color: #212429;
+  margin-bottom: 5px;
+}
+
+.redes-container ul li {
+  display: inline-block;
+  margin: 0 25px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.redes-container ul li a {
+  display: block;
+  border-radius: 20px;
+  padding: 0 10px;
+  background-color: #212429;
+  color: #FF958C;
+  line-height: 50px;
+  font-size: 20px;
+  -webkit-box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.2);
+  -webkit-transition: .65s;
+  transition: .65s;
+}
+
+.redes-container ul:hover a {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+.redes-container ul li a:hover {
+  -webkit-transform: translateX(5px) scale(1.05);
+          transform: translateX(5px) scale(1.05);
+  -webkit-box-shadow: 0 5px 5px 2px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 5px 2px rgba(0, 0, 0, 0.4);
+  -webkit-filter: none;
+          filter: none;
+}
+
+.redes-container ul li .Facebook:hover {
+  background: #3b5999;
+  color: white;
+}
+
+.redes-container ul li .Instagram:hover {
+  background: #e4405f;
+  color: white;
+}
+
+.redes-container ul li .Twitter:hover {
+  background: #55acee;
+  color: white;
+}
+
+/*Footer*/
+footer {
+  background-color: #212429;
+  padding: 60px 0 30px 0;
+  margin: auto;
+  overflow: hidden;
+}
+
+footer .contenedor-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+footer .content-foo {
+  text-align: center;
+  color: white;
+}
+
+footer .content-foo h4 {
+  color: #FF958C;
+  border-bottom: 3px solid #FF958C;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+footer .content-foo h2 {
+  color: white;
+  font-size: 17px;
+}
+
+footer .content-foo h2 i {
+  color: #FF958C;
+}
+
+footer .content-foo h2:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+footer .titulo-final {
+  text-align: center;
+  font-size: 15px;
+  margin: 20px 0 0 0;
+  color: white;
+}
+
+footer .line {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .line hr {
+  width: 800px;
+}
+
+footer .firma {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .firma span {
+  color: #FF958C;
+}
+
+footer .firma i {
+  color: #FF958C;
+}
+
+footer .firma .creador {
+  color: white;
+}
+
+footer .firma:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 90vh;
+  }
+  .hero .sobreContainer {
+    width: 400px;
+  }
+  .hero .sobreContainer .container .hero__text .hero__title {
+    font-size: 35px;
+  }
+  .hero .sobreContainer .container .hero__text .hero__subtitle {
+    font-size: 17px;
+  }
+  .hero .sobreContainer .container .hero__text a {
+    margin-left: 190px;
+    width: 190px;
+    font-size: 15px;
+  }
+  /*Porque Learning Responsive*/
+  .porqueLearning .tituloPorque {
+    font-size: 30px;
+    width: 400px;
+    margin-top: 20px;
+  }
+  .porqueLearning .learningContenedor {
+    width: 90%;
+  }
+  .porqueLearning .learningContenedor .learningContenedor__img {
+    width: 400px;
+  }
+  .porqueLearning .learningContenedor .learningContenedor__texto {
+    width: 400px;
+  }
+  /*Cursos Destacados Responsive*/
+  .contenedor-cursos .tituloCursos {
+    font-size: 45px;
+  }
+  /*Footer Responsive*/
+  .contenedor-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content-foo {
+    padding: 15px;
+  }
+  .content-foo h4 {
+    width: 30%;
+    font-size: 20px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 450px) {
+  .hero {
+    height: 80vh;
+  }
+  .hero .sobreContainer {
+    width: 300px;
+  }
+  .hero .sobreContainer .container .hero__text .hero__title {
+    font-size: 25px;
+  }
+  .hero .sobreContainer .container .hero__text .hero__subtitle {
+    font-size: 17px;
+    padding: 10px;
+  }
+  .hero .sobreContainer .container .hero__text a {
+    margin-left: 120px;
+    width: 165px;
+    font-size: 13px;
+  }
+  /*Porque Learning Responsive*/
+  .porqueLearning .tituloPorque {
+    font-size: 30px;
+    width: 320px;
+    margin-top: 15px;
+  }
+  .porqueLearning .learningContenedor {
+    width: 90%;
+  }
+  .porqueLearning .learningContenedor .learningContenedor__img {
+    width: 315px;
+  }
+  .porqueLearning .learningContenedor .learningContenedor__texto {
+    width: 350px;
+  }
+  /*Cursos Descatados Responsive*/
+  .contenedor-cursos .tituloCursos {
+    font-size: 40px;
+  }
+  /*Footer Responsive*/
+  .contenedor-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content-foo {
+    text-align: center;
+    color: white;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 15px;
+  }
+  .content-foo h4 {
+    width: 30%;
+    font-size: 20px;
+    margin: auto;
+  }
+  .content-foo h2 {
+    padding: 10px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 352px) {
+  .redes-container {
+    height: 250px;
+  }
+  .redes-container ul li {
+    display: block;
+    margin: 15px 15px;
+  }
+  .contenedor-footer .content-foo h4 {
+    width: 60%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
